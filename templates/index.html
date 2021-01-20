@@ -1,0 +1,77 @@
+{% extends 'layout.html' %} {% block body %}
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+  <div class="container">
+    <div class="row" style="padding-top: 5rem">
+      <div class="col-8">
+        <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+          <div class="col-md-10 px-0">
+            <h1 class="display-4 font-italic" id="title">Valor de cambio</h1>
+            <table class="table" style="color: white">
+              <thead>
+                <tr>
+                  <th scope="col">Fecha</th>
+                  <th scope="col">Valor</th>
+                </tr>
+              </thead>
+              <tbody id="result2"></tbody>
+            </table>
+            <p class="lead my-3" id="description">
+            <p class="mb-0" id="promedio"></p>
+            <p class="mb-0" id="maximo"></p>
+            <p class="mb-0" id="minimo"></p>
+            </p>
+            <!-- <p class="lead mb-0">
+              <a href="#" class="text-white fw-bold">Continue reading...</a>
+            </p> -->
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="start-date" class="form-label">Start Date</label>
+            <input type="date" class="form-control" id="start-date" />
+          </div>
+          <div class="col-md-6">
+            <label for="end-date" class="form-label">End Date</label>
+            <input type="date" class="form-control" id="end-date" />
+          </div>
+          <div class="col-12">
+            <label for="inputState" class="form-label">Select your value of exchange</label>
+            <select id="inputState" class="form-select">
+              <option selected>Choose...</option>
+              <option value="SP68257">UDIS</option>
+              <option value="SF43718">Dollar</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary" id="submit-query">Calculate</button>
+          </div>
+        </form>
+        <div class="bg-dark rounded" style="margin-top: 5rem">
+          <h4 class="font-italic">Current values</h4>
+          <table class="table" style="color: white">
+            <thead>
+              <tr>
+                <th scope="col">Concepto</th>
+                <th scope="col">Fecha</th>
+                <th scope="col">Valor</th>
+              </tr>
+            </thead>
+            <tbody id="result"></tbody>
+          </table>
+          <!-- <p class="mb-0">
+            Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis
+            consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla
+            sed consectetur.
+          </p> -->
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<script src="static/js/index.js"></script>
+{% endblock %}

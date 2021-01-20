@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cotizacion de UDIS y doláres</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {% block head %}
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.js"></script>
+    <link
+      href="{{ url_for('static', filename='css/bootstrap.min.css') }}"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="{{ url_for('static', filename='favicon.ico') }}"
+    />
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    {% endblock %}
+  </head>
+  <body class="d-flex flex-column h-100">
+    {% include 'includes/navbar.html'%} 
+    {% block body %} {% endblock %}
+    
+  </body>
+
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+      <span class="text-muted">This is a test.</span>
+    </div>
+  </footer>
+</html>
+
+<!-- <p>Hi there how ya doin!?</p> -->
