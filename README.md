@@ -1,6 +1,6 @@
 # Backend admin-mx (Cumplo)
 
-__Este es el contenedor Docker del servidor (backend) admin-mx, celery, Base de datos Mysql
+Este es el contenedor Docker del servidor (backend) admin-mx, celery, Base de datos Mysql
 
 ## Comenzando 
 
