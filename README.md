@@ -15,6 +15,12 @@ Que cosas necesitas para poder ejecutar de manera exitosa tu aplicación.
 Docker (Windows/Linux/MacOS)
 ```
 
+If you are a brand new Mac M1 processor user you will need to do a minor adjustment to the docker-compose.yml file, and you need to add this into the line 55.
+
+```
+platform: linux/amd64
+```
+
 ### Clone the repo
 Lo  primero que debes realizar es una copia del proyecto que se tiene en Bitbucket con el siguiente comando, abriendo una terminal donde quieras clonar el repositorio.
 
@@ -46,7 +52,7 @@ $ docker ps
 $ docker exec -it <container_id> bash
 ```
 
-#### 3.- Run the application to create the super user and fufill the fields to complete the step.
+#### 3.- Run the application to create the super user and fulfill the fields to complete the step.
 
 
 ```
@@ -54,3 +60,5 @@ $ docker exec -it <container_id> bash
 ```
 
 Once that you create the superuser go to the url http://localhost:8080/admin and login, and see the contain of the applications created into the docker image.
+
+
