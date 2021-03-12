@@ -2,13 +2,11 @@
 
 Este es el contenedor Docker del servidor (backend) admin-mx, celery, Base de datos Mysql
 
-## Comenzando 
+## Beginning
 
-This instructions i’ll allow you to get a copy of the project working local into your computer for purposes of development and test.
 
-Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu maquina local para propósitos de desarrollo y pruebas.
+This instructions i'll allow you to get a copy of the project working local into your computer for purposes of development and test.
 
-Mira **Deployment** para conocer como desplegar el proyecto
 
 ### Pre-requisitos 
 Que cosas necesitas para poder ejecutar de manera exitosa tu aplicación.
@@ -17,7 +15,7 @@ Que cosas necesitas para poder ejecutar de manera exitosa tu aplicación.
 Docker (Windows/Linux/MacOS)
 ```
 
-### Instalación
+### Clone the repo
 Lo  primero que debes realizar es una copia del proyecto que se tiene en Bitbucket con el siguiente comando, abriendo una terminal donde quieras clonar el repositorio.
 
 ```
@@ -32,7 +30,7 @@ Esto te creara una carpeta con el nombre admin-mx dentro del directorio que tu h
 $ docker-compose up —build
 ```
 
-This should be enough to keep the app running, for test, open your browser into this url http:localhost:8080/
+This should be enough to keep the app running, for test, open your browser into this url http://localhost:8080/
 
 ### Create a superuser to log into the admin of Django
 
@@ -55,4 +53,4 @@ $ docker exec -it <container_id> bash
 # python manage.py createsuperuser 
 ```
 
-Once that you create the superuser go to the url http://localhost:8080/admin and login to se the contain of the applications created into the docker image.
+Once that you create the superuser go to the url http://localhost:8080/admin and login, and see the contain of the applications created into the docker image.
