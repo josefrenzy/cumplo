@@ -8,20 +8,20 @@ Este es el contenedor Docker del servidor (backend) admin-mx, celery, Base de da
 This instructions i'll allow you to get a copy of the project working local into your computer for purposes of development and test.
 
 
-### Pre-requisitos 
+### Pre-requisitos 📋
 Que cosas necesitas para poder ejecutar de manera exitosa tu aplicación.
 
 ```
 Docker (Windows/Linux/MacOS)
 ```
 
-If you are a brand new Mac M1 processor user you will need to do a minor adjustment to the docker-compose.yml file, and you need to add this into the line 55.
+If you are a brand new Mac M1 processor user you will need to do a minor adjustment to the docker-compose.yml file, and you need to add this into the line 55  to keep the mysql image running correctly.
 
 ```
 platform: linux/amd64
 ```
 
-### Clone the repo
+### Clone the repo 🚀
 Lo  primero que debes realizar es una copia del proyecto que se tiene en Bitbucket con el siguiente comando, abriendo una terminal donde quieras clonar el repositorio.
 
 ```
@@ -33,7 +33,7 @@ Esto te creara una carpeta con el nombre admin-mx dentro del directorio que tu h
 ### Build and up Images
 
 ```
-$ docker-compose up —build
+$ docker-compose up —build 🔧
 ```
 
 This should be enough to keep the app running, for test, open your browser into this url http://localhost:8080/
@@ -61,4 +61,9 @@ $ docker exec -it <container_id> bash
 
 Once that you create the superuser go to the url http://localhost:8080/admin and login, and see the contain of the applications created into the docker image.
 
+## Construido con 🛠️
 
+_Menciona las herramientas que utilizaste para crear tu proyecto_
+
+* [Django](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
+* [MySql](https://maven.apache.org/) - Manejador de dependencias
