@@ -65,5 +65,5 @@ Once that you create the superuser go to the url http://localhost:8080/admin and
 
 _Menciona las herramientas que utilizaste para crear tu proyecto_
 
-* [Django](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [MySql](https://maven.apache.org/) - Manejador de dependencias
+* [Django](http://www.dropwizard.io/1.0.2/docs/) - Web Framework
+* [MySql](https://maven.apache.org/) - DBMS
