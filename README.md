@@ -6,7 +6,7 @@ This is a Docker container service of the server (backed, celery, db, nginx)
 
 This instructions i'll allow you to get a copy of the project working local into your computer for purposes of development and test.
 
-### Pre-requisitos 📋
+### Pre-requuirements 📋
 
 There some applications you need to get installed into your computer to execute successfully the repo downloaded.
 
@@ -30,10 +30,9 @@ git clone git@bitbucket.org/cumplo/admin-mx.git
 
 This will create a folder named admin-mx
 
-
 ### Add environment variables.
 
-Once you get the application cloned you need to add two .env files in the next directories  ```./config/enviroments/local/``` and ```./config/enviroments/base/ ```and the content you need to request to your supervisor.
+Once you get the application cloned you need to add two .env files in the next directories  ```./config/enviroments/local/``` and ```./config/enviroments/base/ ``` and the content you need to request to your supervisor.
 
 ### Build and up Images
 
@@ -72,12 +71,9 @@ $ docker exec -it <container_id> bash
 
 Once that you create the superuser go to the url http://localhost:8080/admin and login, and see the contain of the applications created into the docker image.
 
-## Construido con 🛠️
+## Build with 🛠️
 
 Herramientas utilizadas para el desarrollo de este projecto
 
-* [Django](https://www.djangoproject.com) - El framework web usado
-* [MySql](https://hub.docker.com/_/mysql) - Manejador de bd
-
-
-
+* [Django](https://www.djangoproject.com) - Web Framework
+* [MySql](https://hub.docker.com/_/mysql) - DBMS
