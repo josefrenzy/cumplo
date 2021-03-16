@@ -1,15 +1,14 @@
 # Backend admin-mx (Cumplo)
 
-Este es el contenedor Docker del servidor (backend) admin-mx, celery, Base de datos Mysql
+This is a Docker container service of the server (backed, celery, db, nginx)
 
 ## Beginning
 
-
 This instructions i'll allow you to get a copy of the project working local into your computer for purposes of development and test.
 
-
 ### Pre-requisitos 📋
-Que cosas necesitas para poder ejecutar de manera exitosa tu aplicación.
+
+There some applications you need to get installed into your computer to execute successfully the repo downloaded.
 
 ```
 Docker (Windows/Linux/MacOS)
@@ -21,20 +20,35 @@ If you are a brand new Mac M1 processor user you will need to do a minor adjustm
 platform: linux/amd64
 ```
 
-### Clone the repo 🚀
-Lo  primero que debes realizar es una copia del proyecto que se tiene en Bitbucket con el siguiente comando, abriendo una terminal donde quieras clonar el repositorio.
+### Clone the repo 
+
+First thing you need to do, is clone the repo from bitbucket into a new folder.
 
 ```
-git clone git@bitbucket.org:cumplo/controller-mx-v1.git
+git clone git@bitbucket.org/cumplo/admin-mx.git
 ```
 
-Esto te creara una carpeta con el nombre admin-mx dentro del directorio que tu hayas seleccionado en el terminal, para poder iniciarlo deberas tener corriendo ya el app de escritorio de Docker.
+This will create a folder named admin-mx
+
+
+
+
+
+### Add environment variables.
+
+Once you get the application cloned you need to add two .env files in the next directories  ```./config/enviroments/local/```` and ````./config/enviroments/base/ ````and the content you need to request to your supervisor.
 
 ### Build and up Images
 
 ```
-$ docker-compose up —build 🔧
+$ docker-compose up ——build 🔧
 ```
+
+### Add the database
+
+Create a new directory named ./bd
+
+Add the sql file, this need to request to your supervisor.
 
 This should be enough to keep the app running, for test, open your browser into this url http://localhost:8080/
 
@@ -63,7 +77,10 @@ Once that you create the superuser go to the url http://localhost:8080/admin and
 
 ## Construido con 🛠️
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
+Herramientas utilizadas para el desarrollo de este projecto
 
-* [Django](http://www.dropwizard.io/1.0.2/docs/) - Web Framework
-* [MySql](https://maven.apache.org/) - DBMS
+* [Django](https://www.djangoproject.com) - El framework web usado
+* [MySql](https://hub.docker.com/_/mysql) - Manejador de bd
+
+
+
