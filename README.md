@@ -31,12 +31,9 @@ git clone git@bitbucket.org/cumplo/admin-mx.git
 This will create a folder named admin-mx
 
 
-
-
-
 ### Add environment variables.
 
-Once you get the application cloned you need to add two .env files in the next directories  ```./config/enviroments/local/```` and ````./config/enviroments/base/ ````and the content you need to request to your supervisor.
+Once you get the application cloned you need to add two .env files in the next directories  ```./config/enviroments/local/``` and ```./config/enviroments/base/ ```and the content you need to request to your supervisor.
 
 ### Build and up Images
 
