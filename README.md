@@ -34,17 +34,17 @@ This will create a folder named admin-mx
 
 Once you get the application cloned you need to add two .env files in the next directories  ```./config/enviroments/local/``` and ```./config/enviroments/base/ ``` and the content you need to request to your supervisor.
 
+### Add the database
+
+Create a new directory named ```./bd```
+
+Add the sql file, this need to request to your supervisor.
+
 ### Build and up Images
 
 ```
 $ docker-compose up ——build 🔧
 ```
-
-### Add the database
-
-Create a new directory named ./bd
-
-Add the sql file, this need to request to your supervisor.
 
 This should be enough to keep the app running, for test, open your browser into this url http://localhost:8080/
 
